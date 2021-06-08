@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DesignPatterns.AbstractFactory
 {
-    class SquareFactory : IFactory
+    class Factory3D : IFactory
     {
         public ICircle CreateCircle()
         {

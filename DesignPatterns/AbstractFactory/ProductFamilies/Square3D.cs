@@ -14,7 +14,7 @@ namespace DesignPatterns.AbstractFactory
     {
         public void Draw()
         {
-            Console.WriteLine("Square2D.Draw()");
+            Console.WriteLine("Square3D.Draw()");
         }
     }
 }

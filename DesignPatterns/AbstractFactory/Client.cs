@@ -24,7 +24,7 @@ namespace DesignPatterns.AbstractFactory
             square = factory.CreateSquare();
             square.Draw();
 
-            factory = new SquareFactory();
+            factory = new Factory3D();
             square = factory.CreateSquare();
             square.Draw();
 
