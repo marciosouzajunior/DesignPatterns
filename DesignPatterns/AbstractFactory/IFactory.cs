@@ -10,9 +10,9 @@ namespace DesignPatterns.AbstractFactory
      * 
      * Declares an interface for operations that create abstract product objects.
      */
-    interface IShapeFactory
+    interface IFactory
     {
-        IShape CreateRectangle();
-        IShape CreateCircle();
+        ISquare CreateSquare();
+        ICircle CreateCircle();
     }
 }

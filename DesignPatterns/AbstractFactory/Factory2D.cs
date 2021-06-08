@@ -4,16 +4,16 @@ using System.Text;
 
 namespace DesignPatterns.AbstractFactory
 {
-    class Shape2DFactory : IShapeFactory
+    class Factory2D : IFactory
     {
-        public IShape CreateCircle()
+        public ICircle CreateCircle()
         {
             return new Circle2D();
         }
 
-        public IShape CreateRectangle()
+        public ISquare CreateSquare()
         {
-            return new Rectangle2D();
+            return new Square2D();
         }
     }
 }

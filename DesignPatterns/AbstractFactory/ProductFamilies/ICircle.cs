@@ -10,7 +10,7 @@ namespace DesignPatterns.AbstractFactory
      * 
      * Declares an interface for a type of product object.
      */
-    interface IShape
+    interface ICircle
     {
         void Draw();
     }

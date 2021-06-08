@@ -10,11 +10,11 @@ namespace DesignPatterns.AbstractFactory
      * - defines a product object to be created by the corresponding concrete factory.
      * - implements the AbstractProduct interface.
      */
-    class Rectangle2D : IShape
+    class Square2D : ISquare
     {
         public void Draw()
         {
-            Console.WriteLine("Rectangle2D.Draw()");
+            Console.WriteLine("Square2D.Draw()");
         }
     }
 }

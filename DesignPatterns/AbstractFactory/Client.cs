@@ -15,18 +15,18 @@ namespace DesignPatterns.AbstractFactory
         public void Run()
         {
 
-            IShapeFactory shapeFactory;
-            IShape shape;
+            IFactory factory;
+            ISquare square;
 
             // Factory can be initialized with a simple assignment of a 
             // new factory instance at the beginning of the program:
-            shapeFactory = new Shape2DFactory();
-            shape = shapeFactory.CreateCircle();
-            shape.Draw();
+            factory = new Factory2D();
+            square = factory.CreateSquare();
+            square.Draw();
 
-            shapeFactory = new Shape3DFactory();
-            shape = shapeFactory.CreateCircle();
-            shape.Draw();
+            factory = new SquareFactory();
+            square = factory.CreateSquare();
+            square.Draw();
 
         }
 

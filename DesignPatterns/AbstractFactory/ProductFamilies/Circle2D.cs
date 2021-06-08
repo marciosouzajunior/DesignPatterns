@@ -10,7 +10,7 @@ namespace DesignPatterns.AbstractFactory
      * - defines a product object to be created by the corresponding concrete factory.
      * - implements the AbstractProduct interface.
      */
-    class Circle2D : IShape
+    class Circle2D : ICircle
     {
         public void Draw()
         {
