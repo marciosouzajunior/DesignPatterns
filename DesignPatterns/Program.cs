@@ -8,6 +8,7 @@ namespace DesignPatterns
 
             new Strategy.Client().Run();
             new AbstractFactory.Client().Run();
+            new Composite.Client().Run();
 
         }
 
