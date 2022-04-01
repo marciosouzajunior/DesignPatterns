@@ -13,26 +13,20 @@ namespace DesignPatterns.Composite
 
     class Client
     {
-
         public void Run()
-        {
+        {            
+            Picture picture1 = new Picture();
+            picture1.Add(new Line(30));
+            picture1.Add(new Text("Composite Design Pattern"));
+            picture1.Add(new Line(30));
 
-            IPerson family1 = new Family();
-            IPerson elizabeth = new Person("Elizabeth");
-            IPerson philip = new Person("Philip");
-            family1.add(elizabeth);
-            family1.add(philip);
+            Picture picture2 = new Picture();
+            picture2.Add(new Text("Drawing a rectangle:"));
+            picture2.Add(new Rectangle());
+            picture2.SetColor(ConsoleColor.DarkGreen);
+            picture1.Add(picture2);
 
-            IPerson family2 = new Family();
-            IPerson charles = new Person("Charles");
-            IPerson diana = new Person("Diana");
-            family2.add(charles);
-            family2.add(diana);
-
-            family1.add(family2);
-            family1.print();
-
+            picture1.Draw();
         }
-
     }
 }

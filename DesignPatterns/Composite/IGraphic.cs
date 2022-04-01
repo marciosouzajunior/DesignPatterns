@@ -16,10 +16,11 @@ namespace DesignPatterns.Composite
      * recursive structure, and implements it if that's appropriate.
      */
 
-    public interface IPerson
+    public interface IGraphic
     {
-        void add(IPerson p);
-        void print();
+        void Add(IGraphic graphic);
+        void Draw();
+        void SetColor(ConsoleColor color);
     }
 
 }
