@@ -15,12 +15,12 @@ namespace DesignPatterns.Composite
     {
         public void Run()
         {            
-            Picture picture1 = new Picture();
+            IGraphic picture1 = new Picture();
             picture1.Add(new Line(30));
             picture1.Add(new Text("Composite Design Pattern"));
             picture1.Add(new Line(30));
 
-            Picture picture2 = new Picture();
+            IGraphic picture2 = new Picture();
             picture2.Add(new Text("Drawing a rectangle:"));
             picture2.Add(new Rectangle());
             picture2.SetColor(ConsoleColor.DarkGreen);
